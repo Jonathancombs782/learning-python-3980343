@@ -1,20 +1,3 @@
-# repo_audit.py
-
-for repo in github_repositories:
-    metadata = inspect_repository(repo)
-
-    classification = classify_repository(
-        metadata,
-        fork_status=True,
-        upstream=True,
-        commits=True,
-        ownership=True
-    )
-
-    save_repository(
-        metadata=metadata,
-        classification=classification
-    ){
 	"name": "Python 3",
 	"build": {
 		"dockerfile": "Dockerfile",
